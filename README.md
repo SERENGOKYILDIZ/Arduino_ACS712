@@ -1,4 +1,16 @@
-# Circuit
+# Arduino Nano ACS712
+
+## Comment
+Although Arduino Nano works with 5V, it is designed to have a maximum of 3.3V to the ADC pin by applying the voltage divider law.
+
+R1 = 1kΩ
+R2 = 2kΩ
+
+Vout = Vin * (R2/(R1+R2)) If we say Vin = 5V;<br />
+Vout = 5 * (2/3)<br />
+Vin = 3.33V becomes.
+
+## Circuit
 ![deneme](circuit.png)
 
 # Code
